@@ -186,6 +186,10 @@ declare namespace fetchMock {
     }
 
     interface FetchMockStatic {
+        config: {
+          fallbackToNetwork: boolean
+        };
+        
         /**
          * Replaces fetch() with a stub which records its calls, grouped by
          * route, and optionally returns a mocked Response object or passes the
